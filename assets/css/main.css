@@ -53,10 +53,13 @@ body {
 	flex-direction: row !important;
 	justify-content: space-between !important;
 	align-items: center !important;
+	padding: 2rem 4rem !important;
 }
 .footer-single-line > section {
 	margin: 0 !important;
-	padding: 1em 0 !important;
+	padding: 0 !important;
+	border-top: none !important;
+	flex-basis: auto !important;
 }
 .footer-icons-right {
 	text-align: right !important;
