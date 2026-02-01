@@ -5087,20 +5087,20 @@ input, select, textarea {
 
 /* FINAL OVERRIDES - Certifications page 3-column alignment */
 #main-cert > .posts {
-	display: flex !important;
-	flex-wrap: wrap !important;
-	align-items: stretch !important;
+	display: grid !important;
+	grid-template-columns: repeat(3, 1fr) !important;
+	gap: 1rem !important;
 	padding: 1rem !important;
 }
 
 #main-cert > .posts > article {
-	width: 33.333% !important;
-	flex: 0 0 33.333% !important;
+	width: 100% !important;
 	border: none !important;
 	padding: 1rem !important;
 	box-sizing: border-box !important;
 	display: flex !important;
 	flex-direction: column !important;
+	align-items: center !important;
 }
 
 #main-cert > .posts > article header {
@@ -5132,15 +5132,13 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 980px) {
-	#main-cert > .posts > article {
-		width: 33.333% !important;
-		flex: 0 0 33.333% !important;
+	#main-cert > .posts {
+		grid-template-columns: repeat(3, 1fr) !important;
 	}
 }
 
 @media screen and (max-width: 736px) {
-	#main-cert > .posts > article {
-		width: 100% !important;
-		flex: 0 0 100% !important;
+	#main-cert > .posts {
+		grid-template-columns: 1fr !important;
 	}
 }
