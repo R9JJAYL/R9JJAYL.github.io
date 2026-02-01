@@ -74,29 +74,36 @@ ul.actions li .button {
 }
 
 #nav {
-	border-radius: 24px;
+	border-radius: 24px 24px 0 0;
+}
+
+#main {
+	border-radius: 0 0 32px 32px;
+	margin-top: 0 !important;
 }
 
 #main > article,
 #main > section,
 .posts > article {
-	border-radius: 32px;
+	border-radius: 0;
 }
 
 #footer {
-	border-radius: 32px 32px 0 0;
+	border-radius: 0;
+	margin-top: 0 !important;
 }
 
 #header .logo {
 	border-radius: 16px;
 }
 
-#main {
-	border-radius: 32px;
+#wrapper > * {
+	border-radius: 0;
 }
 
-#wrapper > * {
-	border-radius: 24px;
+/* Overall wrapper for smooth flow */
+#wrapper {
+	background: transparent;
 }
 
 ol, ul {
