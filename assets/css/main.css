@@ -34,8 +34,8 @@ body {
 }
 
 /* Custom font override - Roboto */
-* {
-	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+*, *::before, *::after {
+	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .wrapper-jamie {
