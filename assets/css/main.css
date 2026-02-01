@@ -68,6 +68,23 @@ body {
 	justify-content: flex-end !important;
 }
 
+/* Polished section headings for About Me page */
+.post h3 {
+	font-size: 1.4rem !important;
+	font-weight: 600 !important;
+	color: #2c3e50 !important;
+	margin-top: 2.5rem !important;
+	margin-bottom: 1.5rem !important;
+	padding-bottom: 0.75rem !important;
+	border-bottom: 3px solid #3498db !important;
+	display: inline-block !important;
+	letter-spacing: 0.5px !important;
+}
+
+.post h3:first-of-type {
+	margin-top: 0 !important;
+}
+
 .wrapper-jamie {
 	width: 1000px;
 	margin: 0 auto;
