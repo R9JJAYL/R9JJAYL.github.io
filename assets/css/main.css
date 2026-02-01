@@ -5144,3 +5144,14 @@ input, select, textarea {
 		grid-template-columns: 1fr !important;
 	}
 }
+
+/* Rounded bottom corners for all pages */
+#main {
+	border-radius: 0 0 32px 32px !important;
+	overflow: hidden !important;
+}
+
+#main-cert {
+	border-radius: 0 0 32px 32px !important;
+	overflow: hidden !important;
+}
