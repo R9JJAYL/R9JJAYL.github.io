@@ -68,9 +68,19 @@ a.image.fit,
 a.image.main {
 	border-radius: 24px !important;
 	overflow: hidden !important;
+	display: block !important;
 }
 
-a.image:hover img {
+a.image:hover,
+a.image.fit:hover,
+a.image.main:hover {
+	border-radius: 24px !important;
+	overflow: hidden !important;
+}
+
+a.image:hover img,
+a.image.fit:hover img,
+a.image.main:hover img {
 	border-radius: 24px !important;
 }
 
