@@ -33,11 +33,18 @@ body {
 	line-height: 1;
 }
 
-/* Custom font override - Roboto (excluding Font Awesome icons) */
-*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad),
-*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad)::before,
-*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad)::after {
+/* Custom font override - Roboto */
+*, *::before, *::after {
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Restore Font Awesome font family for icons */
+.fa, .fas, .fab, .far, .fal, .fad,
+.fa::before, .fas::before, .fab::before, .far::before, .fal::before, .fad::before {
+	font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+}
+.fab, .fab::before {
+	font-family: "Font Awesome 5 Brands" !important;
 }
 
 .wrapper-jamie {
