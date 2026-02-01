@@ -81,6 +81,8 @@ ul.actions li .button {
 #nav ul.links li.active {
 	border-radius: 0 !important;
 	position: relative;
+	padding-top: 15px !important;
+	margin-top: -15px !important;
 }
 
 #nav ul.links li.active::after {
