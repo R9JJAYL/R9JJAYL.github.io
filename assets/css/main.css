@@ -35,8 +35,17 @@ body {
 
 .wrapper-jamie {
 	width: 1000px;
-	margin: o auto;
-	
+	margin: 0 auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.centered-image {
+	width: 625px;
+	margin: 0 auto;
+	max-width: 100%;
 }
 
 ol, ul {
