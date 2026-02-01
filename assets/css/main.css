@@ -74,7 +74,8 @@ ul.actions li .button {
 }
 
 #nav {
-	border-radius: 80px 80px 0 0 !important;
+	border-radius: 60px 60px 0 0 !important;
+	padding-top: 25px !important;
 }
 
 /* Remove the gap between active nav tab and content */
