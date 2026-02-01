@@ -98,10 +98,11 @@ nav, header, footer, section, article,
 }
 
 #main-cert .posts article header {
-	min-height: 120px;
+	min-height: 160px;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: center;
+	padding-bottom: 1rem;
 }
 
 #main-cert .posts article header h2 {
