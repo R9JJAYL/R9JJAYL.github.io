@@ -4644,6 +4644,30 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			#footer > section.split.contact {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+			#footer > section.split.contact > section {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-align-items: flex-start;
+				-webkit-align-items: flex-start;
+				-ms-align-items: flex-start;
+				align-items: flex-start;
+				padding: 1.5rem;
+			}
+
+			#footer > section.split.contact > section > :first-child {
+				width: auto;
+				margin-bottom: 0.5rem;
+			}
+
 		}
 
 	#copyright {
