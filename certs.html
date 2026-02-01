@@ -11,31 +11,39 @@
 			#main-cert > .posts {
 				display: grid !important;
 				grid-template-columns: repeat(3, 1fr) !important;
-				gap: 1rem !important;
-				padding: 1.5rem !important;
+				gap: 2rem 1.5rem !important;
+				padding: 2rem !important;
 			}
 			#main-cert > .posts > article {
 				border: none !important;
-				padding: 1rem !important;
+				padding: 0 !important;
 				text-align: center !important;
+				display: flex !important;
+				flex-direction: column !important;
 			}
 			#main-cert > .posts > article header {
-				min-height: 60px !important;
+				min-height: 70px !important;
 				display: flex !important;
-				align-items: flex-end !important;
+				align-items: center !important;
 				justify-content: center !important;
-				margin-bottom: 0.5rem !important;
+				margin-bottom: 1rem !important;
 			}
 			#main-cert > .posts > article header h2 {
-				font-size: 0.85rem !important;
+				font-size: 0.9rem !important;
 				margin: 0 !important;
-			}
-			#main-cert > .posts > article .image.fit img {
-				height: 130px !important;
-				object-fit: cover !important;
+				line-height: 1.4 !important;
 			}
 			#main-cert > .posts > article .image.fit {
 				margin: 0 !important;
+				border-radius: 12px !important;
+				overflow: hidden !important;
+				background: #f5f5f5 !important;
+			}
+			#main-cert > .posts > article .image.fit img {
+				height: 150px !important;
+				width: 100% !important;
+				object-fit: contain !important;
+				border-radius: 12px !important;
 			}
 			#main-cert > .posts > article ul.actions {
 				display: none !important;
