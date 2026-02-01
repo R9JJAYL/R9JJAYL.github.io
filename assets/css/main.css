@@ -48,6 +48,23 @@ body {
 	max-width: 100%;
 }
 
+/* Responsive video container */
+.video-container {
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	margin: 2rem auto;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.video-container iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	height: auto;
+	border-radius: 24px;
+}
+
 /* Uniform image heights for article cards */
 .posts article .image.fit img {
 	width: 100%;
