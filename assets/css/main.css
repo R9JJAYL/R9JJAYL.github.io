@@ -80,8 +80,18 @@ ul.actions li .button {
 /* Remove the gap between active nav tab and content */
 #nav ul.links li.active {
 	border-radius: 0 !important;
-	margin-bottom: -1px;
-	padding-bottom: 1px;
+	position: relative;
+}
+
+#nav ul.links li.active::after {
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: #ffffff;
+	z-index: 1;
 }
 
 #nav ul.links li.active a {
@@ -91,6 +101,8 @@ ul.actions li .button {
 #nav {
 	margin-bottom: 0 !important;
 	padding-bottom: 0 !important;
+	position: relative;
+	z-index: 2;
 }
 
 #main {
