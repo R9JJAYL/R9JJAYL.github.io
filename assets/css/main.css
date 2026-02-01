@@ -5146,18 +5146,24 @@ input, select, textarea {
 }
 
 /* Rounded bottom corners for all pages */
-/* Main content never has rounded bottom - footer is below it */
+/* Round #main - will show on pages with empty footer */
 #main {
+	border-radius: 0 0 32px 32px !important;
+	overflow: hidden !important;
+}
+
+/* When main has footer-below class, remove its rounding */
+#main.has-footer {
 	border-radius: 0 !important;
 }
 
-/* Certifications page uses main-cert and has no visible footer content */
+/* Certifications page uses main-cert */
 #main-cert {
 	border-radius: 0 0 32px 32px !important;
 	overflow: hidden !important;
 }
 
-/* Footer always gets rounded bottom corners since it's always last */
+/* Footer gets rounded bottom corners - will show on pages with footer content */
 #footer {
 	border-radius: 0 0 32px 32px !important;
 	overflow: hidden !important;
