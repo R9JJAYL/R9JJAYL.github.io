@@ -77,17 +77,20 @@ ul.actions li .button {
 	border-radius: 24px 24px 0 0;
 }
 
-/* Remove the rounded corners on active nav tab to eliminate gap */
+/* Remove the gap between active nav tab and content */
 #nav ul.links li.active {
 	border-radius: 0 !important;
+	margin-bottom: -1px;
+	padding-bottom: 1px;
 }
 
 #nav ul.links li.active a {
 	border-radius: 0 !important;
 }
 
-#nav ul.links li a:after {
-	border-radius: 0 !important;
+#nav {
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 #main {
