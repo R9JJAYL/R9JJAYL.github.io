@@ -62,6 +62,18 @@ body {
 	border-radius: 24px !important;
 }
 
+/* Ensure rounded corners stay on hover */
+a.image,
+a.image.fit,
+a.image.main {
+	border-radius: 24px !important;
+	overflow: hidden !important;
+}
+
+a.image:hover img {
+	border-radius: 24px !important;
+}
+
 .button,
 a.button,
 button,
