@@ -33,8 +33,10 @@ body {
 	line-height: 1;
 }
 
-/* Custom font override - Roboto */
-*, *::before, *::after {
+/* Custom font override - Roboto (excluding Font Awesome icons) */
+*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad),
+*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad)::before,
+*:not(.fa):not(.fas):not(.fab):not(.far):not(.fal):not(.fad)::after {
 	font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
