@@ -55,14 +55,20 @@ body {
 }
 
 .posts article header {
-	min-height: 80px;
+	min-height: 100px;
 	display: flex;
 	align-items: flex-end;
+	justify-content: center;
+}
+
+.posts article header h2 {
+	margin-bottom: 0 !important;
 }
 
 .posts article .image.fit {
 	height: 250px;
 	overflow: hidden;
+	flex-shrink: 0;
 }
 
 .posts article .image.fit img {
