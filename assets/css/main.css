@@ -68,7 +68,7 @@ body {
 	justify-content: flex-end !important;
 }
 
-/* Polished section headings for About Me page only */
+/* Polished section headings for About Me page with hover animation */
 .post.full h3,
 #elements .post h3 {
 	font-size: 1.4rem !important;
@@ -77,9 +77,29 @@ body {
 	margin-top: 2.5rem !important;
 	margin-bottom: 1.5rem !important;
 	padding-bottom: 0.75rem !important;
-	border-bottom: 3px solid #3498db !important;
 	display: inline-block !important;
 	letter-spacing: 0.5px !important;
+	position: relative !important;
+	cursor: default !important;
+	transition: color 0.3s ease !important;
+}
+
+.post.full h3::after,
+#elements .post h3::after {
+	content: '' !important;
+	position: absolute !important;
+	width: 0 !important;
+	height: 3px !important;
+	bottom: 0 !important;
+	left: 50% !important;
+	background: linear-gradient(90deg, #3498db, #9b59b6) !important;
+	transition: width 0.3s ease !important;
+	transform: translateX(-50%) !important;
+}
+
+.post.full h3:hover::after,
+#elements .post h3:hover::after {
+	width: 100% !important;
 }
 
 .post.full h3:first-of-type,
