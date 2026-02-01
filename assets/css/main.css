@@ -68,8 +68,9 @@ body {
 	justify-content: flex-end !important;
 }
 
-/* Polished section headings for About Me page */
-.post h3 {
+/* Polished section headings for About Me page only */
+.post.full h3,
+#elements .post h3 {
 	font-size: 1.4rem !important;
 	font-weight: 600 !important;
 	color: #2c3e50 !important;
@@ -81,7 +82,8 @@ body {
 	letter-spacing: 0.5px !important;
 }
 
-.post h3:first-of-type {
+.post.full h3:first-of-type,
+#elements .post h3:first-of-type {
 	margin-top: 0 !important;
 }
 
@@ -118,7 +120,8 @@ body {
 }
 
 /* Animated titles for Analytics Projects page */
-#main .posts article header h2 a {
+#main .posts article header h2 a,
+#main .post.featured header.major h3 a {
 	color: #2c3e50 !important;
 	text-decoration: none !important;
 	position: relative !important;
@@ -127,7 +130,8 @@ body {
 	transition: color 0.3s ease !important;
 }
 
-#main .posts article header h2 a::after {
+#main .posts article header h2 a::after,
+#main .post.featured header.major h3 a::after {
 	content: '' !important;
 	position: absolute !important;
 	width: 0 !important;
@@ -139,11 +143,13 @@ body {
 	transform: translateX(-50%) !important;
 }
 
-#main .posts article header h2 a:hover {
+#main .posts article header h2 a:hover,
+#main .post.featured header.major h3 a:hover {
 	color: #3498db !important;
 }
 
-#main .posts article header h2 a:hover::after {
+#main .posts article header h2 a:hover::after,
+#main .post.featured header.major h3 a:hover::after {
 	width: 100% !important;
 }
 
