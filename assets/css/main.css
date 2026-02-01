@@ -5155,3 +5155,8 @@ input, select, textarea {
 	border-radius: 0 0 32px 32px !important;
 	overflow: hidden !important;
 }
+
+#footer {
+	border-radius: 0 0 32px 32px !important;
+	overflow: hidden !important;
+}
