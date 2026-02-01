@@ -5146,9 +5146,16 @@ input, select, textarea {
 }
 
 /* Rounded bottom corners for all pages */
-#main {
+/* Only round #main when there's no footer below it */
+#main + #footer ~ #main,
+#main:not(:has(~ #footer)) {
 	border-radius: 0 0 32px 32px !important;
 	overflow: hidden !important;
+}
+
+/* When footer exists, main should have square bottom */
+#wrapper:has(#footer) #main {
+	border-radius: 0 !important;
 }
 
 #main-cert {
@@ -5156,6 +5163,7 @@ input, select, textarea {
 	overflow: hidden !important;
 }
 
+/* Footer always gets rounded bottom corners since it's always last */
 #footer {
 	border-radius: 0 0 32px 32px !important;
 	overflow: hidden !important;
