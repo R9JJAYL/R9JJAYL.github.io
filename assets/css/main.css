@@ -33,6 +33,11 @@ body {
 	line-height: 1;
 }
 
+/* Custom font override */
+body, input, select, textarea, p, li, a, span, div {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
 .wrapper-jamie {
 	width: 1000px;
 	margin: 0 auto;
