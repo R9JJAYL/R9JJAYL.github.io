@@ -5084,3 +5084,33 @@ input, select, textarea {
 			}
 
 		}
+
+/* FINAL OVERRIDES - Certifications page 3-column alignment */
+#main-cert > .posts > article {
+	width: 33.333% !important;
+	border: none !important;
+}
+
+#main-cert > .posts > article header {
+	min-height: 160px !important;
+	display: flex !important;
+	align-items: flex-end !important;
+	justify-content: center !important;
+}
+
+#main-cert > .posts > article .image.fit img {
+	height: 160px !important;
+	object-fit: cover !important;
+}
+
+@media screen and (max-width: 980px) {
+	#main-cert > .posts > article {
+		width: 33.333% !important;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#main-cert > .posts > article {
+		width: 100% !important;
+	}
+}
