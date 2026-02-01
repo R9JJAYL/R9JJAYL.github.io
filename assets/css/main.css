@@ -203,6 +203,8 @@ ul.actions li .button {
 #main {
 	border-radius: 0 0 32px 32px;
 	margin-top: 0 !important;
+	overflow: hidden;
+	padding-bottom: 2rem;
 }
 
 #main > article,
