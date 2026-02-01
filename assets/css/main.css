@@ -48,7 +48,18 @@ body {
 	max-width: 100%;
 }
 
-/* Uniform image heights for article cards */
+/* Uniform article card layout */
+.posts article {
+	display: flex;
+	flex-direction: column;
+}
+
+.posts article header {
+	min-height: 80px;
+	display: flex;
+	align-items: flex-end;
+}
+
 .posts article .image.fit {
 	height: 250px;
 	overflow: hidden;
