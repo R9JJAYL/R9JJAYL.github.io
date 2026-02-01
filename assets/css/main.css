@@ -169,16 +169,16 @@ body {
 #main-cert .posts article .image.fit {
 	width: 100% !important;
 	margin: 0 !important;
-	border-radius: 12px !important;
+	border-radius: 24px !important;
 	overflow: hidden !important;
-	background: #f5f5f5 !important;
+	background: transparent !important;
 }
 
 #main-cert .posts article .image.fit img {
 	width: 100% !important;
-	height: 150px !important;
-	object-fit: contain !important;
-	border-radius: 12px !important;
+	height: auto !important;
+	object-fit: cover !important;
+	border-radius: 24px !important;
 }
 
 #main-cert .posts article ul.actions {
