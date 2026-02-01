@@ -33,8 +33,12 @@ body {
 	line-height: 1;
 }
 
-/* Custom font override */
-body, input, select, textarea, p, li, a, span, div {
+/* Custom font override - Helvetica everywhere */
+body, input, select, textarea, p, li, a, span, div,
+h1, h2, h3, h4, h5, h6,
+button, label, th, td,
+nav, header, footer, section, article,
+.button, #nav, #header, #footer {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
