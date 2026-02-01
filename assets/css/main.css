@@ -118,30 +118,32 @@ body {
 }
 
 /* Animated titles for Analytics Projects page */
-.posts article header h2 a {
+#main .posts article header h2 a {
 	color: #2c3e50 !important;
 	text-decoration: none !important;
 	position: relative !important;
+	display: inline-block !important;
+	padding-bottom: 6px !important;
 	transition: color 0.3s ease !important;
 }
 
-.posts article header h2 a::after {
+#main .posts article header h2 a::after {
 	content: '' !important;
 	position: absolute !important;
 	width: 0 !important;
 	height: 3px !important;
-	bottom: -4px !important;
+	bottom: 0 !important;
 	left: 50% !important;
 	background: linear-gradient(90deg, #3498db, #9b59b6) !important;
-	transition: all 0.3s ease !important;
+	transition: width 0.3s ease !important;
 	transform: translateX(-50%) !important;
 }
 
-.posts article header h2 a:hover {
+#main .posts article header h2 a:hover {
 	color: #3498db !important;
 }
 
-.posts article header h2 a:hover::after {
+#main .posts article header h2 a:hover::after {
 	width: 100% !important;
 }
 
