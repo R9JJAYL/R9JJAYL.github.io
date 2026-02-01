@@ -63,10 +63,13 @@ body {
 }
 
 .button,
+a.button,
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input[type="button"],
+.actions .button,
+ul.actions li .button {
 	border-radius: 50px !important;
 }
 
