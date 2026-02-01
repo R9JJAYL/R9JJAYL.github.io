@@ -47,6 +47,27 @@ body {
 	font-family: "Font Awesome 5 Brands" !important;
 }
 
+/* Footer single line layout */
+.footer-single-line {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+}
+.footer-single-line > section {
+	margin: 0 !important;
+	padding: 1em 0 !important;
+}
+.footer-icons-right {
+	text-align: right !important;
+}
+.footer-icons-right h3 {
+	text-align: right !important;
+}
+.footer-icons-right .icons {
+	justify-content: flex-end !important;
+}
+
 .wrapper-jamie {
 	width: 1000px;
 	margin: 0 auto;
