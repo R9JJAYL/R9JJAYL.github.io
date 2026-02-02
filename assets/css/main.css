@@ -174,6 +174,11 @@ body {
 	width: 100% !important;
 }
 
+/* Remove italic from featured post description */
+#main .post.featured header.major p {
+	font-style: normal !important;
+}
+
 /* Uniform image heights for article cards */
 .posts article .image.fit img {
 	width: 100%;
