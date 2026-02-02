@@ -343,7 +343,7 @@ ul.actions li .button {
 	border-radius: 16px;
 }
 
-#wrapper > * {
+#wrapper > *:not(#main-cert) {
 	border-radius: 0;
 }
 
