@@ -182,7 +182,7 @@ body {
 
 /* Certifications page alignment */
 #main-cert {
-	border-radius: 0 0 32px 32px;
+	border-radius: 0 0 32px 32px !important;
 	overflow: hidden;
 	padding-bottom: 2rem;
 }
