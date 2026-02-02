@@ -291,6 +291,15 @@ input[type="button"],
 .actions .button,
 ul.actions li .button {
 	border-radius: 50px !important;
+	transition: all 0.3s ease !important;
+}
+
+.button:hover,
+a.button:hover,
+.actions .button:hover,
+ul.actions li .button:hover {
+	transform: translateY(-3px) !important;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
 }
 
 #nav {
