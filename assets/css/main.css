@@ -66,6 +66,7 @@ body {
 }
 .footer-icons-right h3 {
 	text-align: right !important;
+	margin-right: 1rem !important;
 }
 .footer-icons-right .icons {
 	justify-content: flex-end !important;
