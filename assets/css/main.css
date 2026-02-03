@@ -217,33 +217,19 @@ body {
 	content: '' !important;
 	position: absolute !important;
 	left: 50% !important;
-	top: 0 !important;
-	bottom: 0 !important;
+	top: 2rem !important;
+	bottom: 2rem !important;
 	width: 1px !important;
 	background: rgba(0, 0, 0, 0.15) !important;
 	transform: translateX(-50%) !important;
 	z-index: 1 !important;
 }
 
-/* Blogs page - horizontal dividers between rows (first 4 items get bottom border) */
+/* Blogs page - horizontal dividers between rows using border */
 #main .posts article:nth-child(-n+4) {
 	padding-bottom: 2rem !important;
 	margin-bottom: 2rem !important;
-	position: relative !important;
-}
-
-#main .posts article:nth-child(-n+4)::after {
-	content: '' !important;
-	display: block !important;
-	position: absolute !important;
-	bottom: 0 !important;
-	left: 0 !important;
-	right: 0 !important;
-	height: 1px !important;
-	background: rgba(0, 0, 0, 0.15) !important;
-	visibility: visible !important;
-	opacity: 1 !important;
-	width: auto !important;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
 }
 
 /* Certifications page alignment */
