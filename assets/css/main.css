@@ -196,40 +196,53 @@ body {
 	object-fit: cover;
 }
 
-/* Blogs page - completely remove all template dividers */
-#main .posts article::before,
-#main .posts article::after {
+/* Blogs page - remove template dividers that touch edges */
+#main .posts::before,
+#main .posts::after {
 	display: none !important;
-	content: none !important;
-	visibility: hidden !important;
-	opacity: 0 !important;
-	width: 0 !important;
-	height: 0 !important;
 }
 
-/* Blogs page - add vertical divider line in center */
-#main .posts {
+/* Blogs page articles need position relative for dividers */
+#main .posts article {
 	position: relative !important;
-	overflow: hidden !important;
 }
 
-#main .posts::before {
+/* Blogs page - vertical divider on left column articles (odd items) */
+#main .posts article:nth-child(odd)::after {
 	content: '' !important;
 	position: absolute !important;
-	left: 50% !important;
-	top: 2rem !important;
-	bottom: 2rem !important;
+	right: -1.5rem !important;
+	top: 0 !important;
+	height: calc(100% + 3rem) !important;
 	width: 1px !important;
 	background: rgba(0, 0, 0, 0.15) !important;
-	transform: translateX(-50%) !important;
-	z-index: 1 !important;
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
 }
 
-/* Blogs page - horizontal dividers between rows using border */
-#main .posts article:nth-child(-n+4) {
-	padding-bottom: 2rem !important;
-	margin-bottom: 2rem !important;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+/* Last row - don't extend vertical divider */
+#main .posts article:nth-child(5)::after {
+	height: 100% !important;
+}
+
+/* Blogs page - horizontal dividers on first 4 items (rows 1 and 2) */
+#main .posts article:nth-child(-n+4)::before {
+	content: '' !important;
+	position: absolute !important;
+	bottom: -1.5rem !important;
+	left: 0 !important;
+	width: calc(100% + 3rem) !important;
+	height: 1px !important;
+	background: rgba(0, 0, 0, 0.15) !important;
+	display: block !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+/* Don't extend horizontal divider past right column */
+#main .posts article:nth-child(even)::before {
+	width: 100% !important;
 }
 
 /* Certifications page alignment */
